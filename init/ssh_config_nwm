@@ -1,0 +1,23 @@
+Host *
+     ForwardX11 yes
+     ForwardX11Trusted yes
+     KeepAlive yes
+     ServerAliveInterval 30
+Host lonestar
+     Hostname ls5.tacc.utexas.edu
+     User mortonne
+Host ilonestar
+     Hostname vlogin03.ls5.tacc.utexas.edu
+     User mortonne
+Host stampede
+     Hostname stampede.tacc.utexas.edu
+     User mortonne
+Host istampede
+     Hostname vlogin02.stampede.tacc.utexas.edu
+     User mortonne
+Host corral
+     Hostname data.tacc.utexas.edu
+     User mortonne
+Host ranch
+     Hostname ranch.tacc.utexas.edu
+     User mortonne
