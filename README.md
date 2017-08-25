@@ -6,7 +6,7 @@ Utilities for using TACC resources
 There are multiple ways to submit jobs on Lonestar and Stampede:
 
 * `sbatch` - This is the command used to submit batch jobs to the SLURM scheduler. The other methods below use sbatch, and just try to make using it easier. See e.g. the TACC Lonestar 5 documentation for details and sample scripts.
-* `launch` - Script to make it easier to run parametric jobs (i.e. running many commands in parallel, across multiple cores in a node or across multiple nodes). Can also run single commands, in a similar way to sbatch. It's a python script that generates sbatch scripts and submits them.
+* `launch` - Script to make it easier to run parametric jobs (i.e. running many commands in parallel, across multiple cores in a node or across multiple nodes). Can also run single commands, in a similar way to sbatch. It's a python script that generates sbatch scripts and submits them. For running parametric jobs, uses the TACC Launcher (this requires first running `module load launcher`).
 * `submit_job.sh` Script to help organize output from launch, including input commands, sbatch settings, and command output.
 
 ## Initialization scripts
