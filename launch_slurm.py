@@ -10,11 +10,11 @@ import subprocess
 import math
 from datetime import datetime
 
-CORES={'normal':48, 'largemem':32, 'hugemem': 20,
-       'development':48, 'gpu':10, 'largemem512GB':64}
-MAXNODES={'normal':171, 'largemem':342, 'hugemem': 2,
+CORES={'normal':56, 'largemem':112,'small':56, 'hugemem': 20,
+       'development':56, 'gpu':10, 'largemem512GB':64}
+MAXNODES={'normal':512, 'largemem':2048,'small':2, 'hugemem': 2,
           'development':11, 'gpu':4, 'largemem512GB':4}
-MAXCORES={'normal':4104, 'largemem':8208, 'hugemem': 40,
+MAXCORES={'normal':4104, 'largemem':8208,'small':56, 'hugemem': 40,
           'development':264, 'gpu':40, 'largemem512GB':4*64}
 
 def launch_slurm(serialcmd='', script_name=None, runtime='01:00:00',
